@@ -2,9 +2,11 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+
   return (
     <div className="App">
-      {/* Sticky Header */}
+      {/* Header */}
       <header className="header">
         <div className="container">
           <div className="nav-brand">
@@ -18,6 +20,25 @@ function App() {
             <a href="#founder">Founder</a>
             <a href="#waitlist">Waitlist</a>
           </nav>
+          <button 
+            className="mobile-menu-toggle"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle mobile menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          {isMobileMenuOpen && (
+            <nav className="mobile-nav">
+              <a href="#home" onClick={() => setIsMobileMenuOpen(false)}>Home</a>
+              <a href="#problem" onClick={() => setIsMobileMenuOpen(false)}>Problem</a>
+              <a href="#solution" onClick={() => setIsMobileMenuOpen(false)}>Solution</a>
+              <a href="#how-it-works" onClick={() => setIsMobileMenuOpen(false)}>How It Works</a>
+              <a href="#founder" onClick={() => setIsMobileMenuOpen(false)}>Founder</a>
+              <a href="#waitlist" onClick={() => setIsMobileMenuOpen(false)}>Waitlist</a>
+            </nav>
+          )}
         </div>
       </header>
 
