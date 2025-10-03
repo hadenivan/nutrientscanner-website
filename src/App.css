@@ -608,16 +608,22 @@ section {
 
   /* Mobile Header - Much Smaller */
   .header {
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
     backdrop-filter: blur(10px);
+    height: auto;
+    min-height: 50px;
   }
   
   .header .container {
     padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
   }
 
   .header-logo {
-    height: 60px; /* Much smaller on mobile */
+    height: 40px; /* Much smaller on mobile */
   }
 
   .nav-links {
@@ -626,60 +632,63 @@ section {
 
   /* Mobile Hero with Better Visual */
   .hero {
-    padding: 60px 0;
+    padding: 30px 0;
   }
 
   .hero .container {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .hero-title {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
   }
 
   .hero-subtitle {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
   .hero-ctas {
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   /* Better Mobile Product Visual */
   .product-showcase {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     margin: 0 auto;
     position: relative;
   }
 
   .device-display {
-    width: 280px;
-    height: 380px;
+    width: 260px;
+    height: 350px;
     margin: 0 auto;
   }
 
   .scan-results-overlay {
-    font-size: 0.7rem;
-    padding: 8px;
-    bottom: 10px;
-    left: 15px;
-    right: 15px;
+    font-size: 0.65rem;
+    padding: 6px;
+    bottom: 8px;
+    left: 12px;
+    right: 12px;
+    max-height: 120px;
+    overflow-y: auto;
   }
 
   .result-line {
-    margin-bottom: 2px;
+    margin-bottom: 1px;
+    font-size: 0.6rem;
   }
 
   .overall-rating {
-    font-size: 0.6rem;
-    padding: 3px 8px;
-    margin: 5px auto;
+    font-size: 0.55rem;
+    padding: 2px 6px;
+    margin: 3px auto;
   }
 
   .section-title {
@@ -774,16 +783,18 @@ section {
 
   /* Smaller Mobile Product Visual */
   .device-display {
-    width: 250px;
-    height: 340px;
+    width: 240px;
+    height: 320px;
   }
 
   .scan-results-overlay {
-    font-size: 0.65rem;
-    padding: 6px;
-    bottom: 8px;
-    left: 12px;
-    right: 12px;
+    font-size: 0.6rem;
+    padding: 5px;
+    bottom: 6px;
+    left: 10px;
+    right: 10px;
+    max-height: 100px;
+    overflow-y: auto;
   }
 
   .result-line {
@@ -817,7 +828,7 @@ section {
   }
 
   .header-logo {
-    height: 50px; /* Much smaller on mobile */
+    height: 35px; /* Much smaller on mobile */
   }
 
   /* Mobile Footer */
