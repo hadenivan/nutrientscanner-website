@@ -168,13 +168,11 @@ function App() {
               <h2>Meet the Founder</h2>
               <h3>Haden Harrison</h3>
               <p>
-                AgTech Entrepreneur passionate about making nutrient-dense food accessible. 
-                As someone who grew up around agriculture, I've seen how farmers produce incredible crops 
-                but struggle to prove their value.
+                An ag tech entrepreneur passionate about making nutrient-dense food more prevalent. Growing up in and around agriculture, I recognize the disconnect between farming practices and consumer value perception. Our mission is to sell food based on real, quantifiable quality rather than superficial marketing metrics—connecting farmers growing nutritionally superior produce with consumers who actually care about their health.
               </p>
               <div className="founder-credentials">
-                <span className="credential">Haskayne School of Business</span>
-                <span className="credential">AgTech Entrepreneur</span>
+                <span className="credential">Agricultural Background</span>
+                <span className="credential">Quality-Driven Solutions</span>
               </div>
             </div>
           </div>
