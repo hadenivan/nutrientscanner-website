@@ -1,0 +1,29 @@
+{
+  "name": "nutriview-website",
+  "version": "1.0.0",
+  "description": "Professional landing page for NutriView Scanner device - revolutionizing food nutrition transparency",
+  "main": "src/App.jsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 3000"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.3",
+    "vite": "^4.4.5"
+  },
+  "keywords": [
+    "agriculture",
+    "nutrient-scanner",
+    "food-transparency",
+    "farming",
+    "nutrition"
+  ],
+  "author": "Haden Harrison",
+  "license": "MIT"
+}

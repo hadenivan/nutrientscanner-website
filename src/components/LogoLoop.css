@@ -1,0 +1,134 @@
+/* LogoLoop CSS */
+.logoloop {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logoloop__track {
+  display: flex;
+  align-items: center;
+  gap: var(--logoloop-gap, 32px);
+}
+
+.logoloop__list {
+  display: flex;
+  align-items: center;
+  gap: var(--logoloop-gap, 32px);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logoloop__item {
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.logoloop__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+.logoloop__link:hover {
+  opacity: 0.7;
+}
+
+.logoloop__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--logoloop-logoHeight, 28px);
+  width: auto;
+}
+
+.logoloop__placeholder img {
+  height: var(--logoloop-logoHeight, 28px);
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.6);
+  transition: filter 0.3s ease;
+}
+
+.logoloop__placeholder img:hover {
+  filter: grayscale(0%) opacity(0.8);
+}
+
+.logoloop__text-placeholder {
+  height: var(--logoloop-logoHeight, 28px);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logoloop__node {
+  display: flex;
+  align-items: center;
+  height: var(--logoloop-logoHeight, 28px);
+  font-size: 24px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.logoloop__node:hover {
+  opacity: 0.8;
+}
+
+/* Fade effect */
+.logoloop--fade::before,
+.logoloop--fade::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.logoloop--fade::before {
+  left: 0;
+  background: linear-gradient(to right, var(--logoloop-fadeColor, #ffffff), transparent);
+}
+
+.logoloop--fade::after {
+  right: 0;
+  background: linear-gradient(to left, var(--logoloop-fadeColor, #ffffff), transparent);
+}
+
+/* Scale on hover */
+.logoloop--scale-hover .logoloop__item {
+  transition: transform 0.3s ease;
+}
+
+.logoloop--scale-hover .logoloop__item:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logoloop__track {
+    gap: calc(var(--logoloop-gap, 32px) * 0.75);
+  }
+  
+  .logoloop__list {
+    gap: calc(var(--logoloop-gap, 32px) * 0.75);
+  }
+  
+  .logoloop__placeholder {
+    height: calc(var(--logoloop-logoHeight, 28px) * 0.8);
+  }
+  
+  .logoloop__placeholder img {
+    height: calc(var(--logoloop-logoHeight, 28px) * 0.8);
+  }
+}
