@@ -102,17 +102,17 @@ function App() {
           <div className="problem-grid">
             <div className="problem-card">
               <div className="problem-icon">Invisible Quality</div>
-              <h3>Invisible Nutrient Quality</h3>
+              <h3>Hidden Nutritional Differences</h3>
               <p>Produce that looks identical can vary in nutrition significantly, but consumers have no way to tell.</p>
             </div>
             <div className="problem-card">
               <div className="problem-icon">Misleading Labels</div>
-              <h3>Misleading Labels</h3>
+              <h3>Unreliable Certifications</h3>
               <p>Certifications only describe practices; they don't guarantee higher nutrient density, flavor, or shelf life.</p>
             </div>
             <div className="problem-card">
               <div className="problem-icon">Farmer Disadvantage</div>
-              <h3>Farmer Disadvantage</h3>
+              <h3>Undervalued Produce</h3>
               <p>Farmers who grow nutrient-dense food cannot prove its value at market and often compete only on price.</p>
             </div>
           </div>
@@ -189,11 +189,11 @@ function App() {
               <h2>Meet the Founder</h2>
               <h3>Haden Harrison</h3>
               <p>
-                An ag tech entrepreneur passionate about making nutrient-dense food more prevalent. Growing up in and around agriculture, I recognize the disconnect between farming practices and consumer value perception. Our mission is to sell food based on real, quantifiable quality rather than superficial marketing metrics—connecting farmers growing nutritionally superior produce with consumers who actually care about their health.
+                An ag tech entrepreneur passionate about Canadian agriculture and food transparency. Growing up in and around agriculture, I recognize the critical need for farmers to demonstrate the true value of their produce and for consumers to know exactly what they're buying. Our mission is to empower Canadian farmers to showcase the real quality of their crops while giving consumers the transparency they deserve in the food they choose for their families.
               </p>
               <div className="founder-credentials">
-                <span className="credential">Agricultural Background</span>
-                <span className="credential">Quality-Driven Solutions</span>
+                <span className="credential">Canadian Agricultural Experience</span>
+                <span className="credential">Farmer-Focused Innovation</span>
               </div>
             </div>
           </div>
